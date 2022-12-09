@@ -479,6 +479,71 @@
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
+        <h2 class="modal-header">Залиште свої дані, ми вам передзвонимо</h2>
+
+        <div role="modal-info">
+          <ul>
+            <li class="form-list-item">
+              <label class="form-list-label">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-list-item__input user-name"
+                  placeholder=" "
+                />
+                <span class="label-name">Ім'я</span>
+                <span class="icon person-icon"></span>
+              </label>
+            </li>
+            <li class="form-list-item">
+              <label class="form-list-label">
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-list-item__input phone"
+                  placeholder=" "
+                />
+                <span class="label-name">Телефон</span>
+                <span class="icon phone-icon"></span>
+              </label>
+            </li>
+            <li class="form-list-item">
+              <label class="form-list-label">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-list-item__input email"
+                  placeholder=" "
+                />
+                <span class="label-name">Пошта</span>
+                <span class="icon mail-icon"></span>
+              </label>
+            </li>
+            <li class="form-list-textarea">
+              <label class="form-list-label">
+                <textarea
+                  name="comment"
+                  class="textarea"
+                  rows="10"
+                  placeholder=" "
+                ></textarea>
+                <span class="label-name textarea-label-name">Коментар</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <label class="agreement-text">
+          <input
+            type="checkbox"
+            name="agreement"
+            class="agreement-text__checkbox"
+          />
+          <span class="agreement-text__icon"></span>Погоджуюся з розсилкою та
+          приймаю
+          <a href="" class="contract-link"> Умови договору </a>
+        </label>
+
         <button data-modal-close class="modal-exit-btn">
           <svg class="modal-exit-icon" width="11" height="11">
             <use href="./images/sprited.svg#exit"></use>
