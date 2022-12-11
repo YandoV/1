@@ -546,6 +546,7 @@ ul {
   opacity: 0;
   pointer-events: none;
   transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .modal {
@@ -559,6 +560,7 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
   padding: 40px;
 }
 
@@ -597,8 +599,11 @@ ul {
   font-style: normal;
   font-size: 20px;
   line-height: calc(23 / 20);
+  line-height: calc(23 / 20);
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--primary-color);
+  margin-bottom: 12px;
   color: var(--primary-color);
   margin-bottom: 12px;
 }
@@ -607,6 +612,7 @@ ul {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 10px;
   margin-bottom: 10px;
 }
 
@@ -626,6 +632,7 @@ ul {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 12px 42px;
   padding: 12px 42px;
 
   font-family: "Roboto";
@@ -669,6 +676,7 @@ ul {
   font-family: "Roboto";
   font-style: normal;
   font-size: 12px;
+  line-height: calc(14 / 12);
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--primary-color);
@@ -739,19 +747,30 @@ ul {
   display: block;
   padding: 10px 52px;
   margin: 0 auto;
+  padding: 10px 52px;
+  margin: 0 auto;
 
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
+  color: var(--secondary-color);
+  background: var(--accent-color);
   color: var(--secondary-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  border: none;
   cursor: pointer;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms;
 }
