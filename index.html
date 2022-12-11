@@ -142,9 +142,9 @@
               <img
                 class="img"
                 src="./images/what_we_do_1.jpg"
-                alt="Процес написання коду"
+                alt="Процес створення десктоп додатку"
                 width="370"
-                height="294"
+                height="295"
               />
               <h3 class="about-desc">Десктопні додатки</h3>
             </li>
@@ -153,9 +153,9 @@
               <img
                 class="img"
                 src="./images/what_we_do_2.jpg"
-                alt="Процес розробки дизайну телефону"
+                alt="Процес створення мобільного додатку"
                 width="370"
-                height="294"
+                height="295"
               />
               <h3 class="about-desc">Мобільні додатки</h3>
             </li>
@@ -163,9 +163,9 @@
               <img
                 class="img"
                 src="./images/what_we_do_3.jpg"
-                alt="Процес підбору кольорів для дизайну"
+                alt="Процес Дизайнерських рішень"
                 width="370"
-                height="294"
+                height="295"
               />
               <h3 class="about-desc">Дизайнерські рішення</h3>
             </li>
@@ -182,7 +182,7 @@
               <img
                 class="team-img"
                 src="./images/Igor_Product.jpg"
-                alt="Чоловік в окулярах та бордовій сорочці"
+                alt="Ігор Продакт Дизайнер"
                 width="270"
                 height="260"
               />
@@ -226,7 +226,7 @@
               <img
                 class="team-img"
                 src="./images/Olga_Front.jpg"
-                alt="Жінка в окулярах та чорному піджаку"
+                alt="Ольга Фронтенд Девелопер"
                 width="270"
                 height="260"
               />
@@ -270,7 +270,7 @@
               <img
                 class="team-img"
                 src="./images/Mykola_Marketing.jpg"
-                alt="Чоловік в сорочці кольору неба"
+                alt="Микола Маркетинг"
                 width="270"
                 height="260"
               />
@@ -314,7 +314,7 @@
               <img
                 class="team-img"
                 src="./images/Mykhaiylo_UI.jpg"
-                alt="Чоловік в чорній футболці"
+                alt="Михайло ЮІ Дизайнер"
                 width="270"
                 height="260"
               />
@@ -479,78 +479,65 @@
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <h2 class="modal-header">Залиште свої дані, ми вам передзвонимо</h2>
-
-        <div role="contentinfo">
-          <ul>
-            <li class="form-list-item">
-              <label class="form-list-label">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-list-item__input user-name"
-                  placeholder=" "
-                />
-                <span class="label-name">Ім'я</span>
-                <span class="icon person-icon"></span>
-              </label>
-            </li>
-            <li class="form-list-item">
-              <label class="form-list-label">
-                <input
-                  type="tel"
-                  name="phone"
-                  class="form-list-item__input phone"
-                  placeholder=" "
-                />
-                <span class="label-name">Телефон</span>
-                <span class="icon phone-icon"></span>
-              </label>
-            </li>
-            <li class="form-list-item">
-              <label class="form-list-label">
-                <input
-                  type="email"
-                  name="email"
-                  class="form-list-item__input email"
-                  placeholder=" "
-                />
-                <span class="label-name">Пошта</span>
-                <span class="icon mail-icon"></span>
-              </label>
-            </li>
-            <li class="form-list-textarea">
-              <label class="form-list-label">
-                <textarea
-                  name="comment"
-                  class="textarea"
-                  rows="10"
-                  placeholder=" "
-                ></textarea>
-                <span class="label-name textarea-label-name">Коментар</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-
-        <label class="agreement-text">
-          <input
-            type="checkbox"
-            name="agreement"
-            class="agreement-text__checkbox"
-          />
-          <span class="agreement-text__icon"></span>Погоджуюся з розсилкою та
-          приймаю
-          <a href="" class="contract-link"> Условия договора</a>
-        </label>
-
-        <button type="submit" class="button form-submit-btn">Отправить</button>
-
         <button data-modal-close class="modal-exit-btn">
-          <svg class="modal-exit-icon" width="11" height="11">
+          <svg class="modal-icon-exit" width="11" height="11">
             <use href="./images/sprited.svg#exit"></use>
           </svg>
         </button>
+
+        <form class="modal-form">
+          <h2 class="modal-header">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <label class="modal-form-field">
+            <span class="modal-form-label">Ім'я</span>
+            <input class="modal-form-input" type="text" name="name" />
+            <svg class="modal-form-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-name-modal"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-label">Телефон</span>
+            <input class="modal-form-input" type="number" name="phone" />
+            <svg class="modal-form-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-phone-modal"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-label">Пошта</span>
+            <input class="modal-form-input" type="email" name="email" />
+            <svg class="modal-form-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-mail-modal"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-label">Коментар</span>
+            <textarea
+              class="modal-form-textarea"
+              name="comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+
+          <label class="modal-form-field">
+            <svg class="modal-form-agreeicon" width="16" height="15">
+              <use href="./images/icons.svg#icon-agree-modal1"></use>
+            </svg>
+            <span class="modal-form-label" for="policy">
+              Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a>
+            </span>
+            <input
+              class="modal-checkbox"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
+          </label>
+
+          <button class="modal-form-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
